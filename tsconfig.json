@@ -1,0 +1,10 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "esModuleInterop": true,
+    "jsx": "react"
+    // Các tùy chọn khác...
+  }
+}

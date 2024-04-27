@@ -1,0 +1,675 @@
+COLORS.lightWhite
+ 
+COLORS.black
+ 
+// Duyệt qua 7 ngày trong tuần và thêm chúng vào mảng weekDates
+/*for (let i = 0; i < 7; i++) {
+  const currentDate = startOfWeek.clone().add(i, 'days');
+  weekDates.push(currentDate);
+}
+
+// Hiển thị các ngày trong tuần
+weekDates.forEach((date, index) => {
+  console.log(`Ngày thứ ${index + 1}: ${date.format('DD/MM/YYYY')}`);
+});*/
+ 
+     //const startOfWeek = today.clone().startOf('week');
+// Tạo một mảng để lưu trữ các ngày trong tuần
+ 
+
+      // Gọi hàm callback từ props để cập nhật TotalBalanceCount của Home
+ 
+ // Xử lý thêm giao dịch ở đây
+  
+      // Lấy giá trị tiền từ cost và chuyển sang kiểu số nguyên
+ 
+ console.log("ID",userID);
+ 
+ const amount = parseInt(cost);
+    
+    // Gọi hàm callback từ props để cập nhật TotalBalanceCount của Home
+    route.params.updateTotalBalanceCount(amount);
+
+    // Quay lại trang Home sau khi thêm giao dịch thành công
+    navigation.goBack();
+ 
+ <MonthChart transactions={monthTransactions} />
+ 
+    {showMonthChart &&}
+ 
+View style={styles.TotalCountContainer}>
+            <Text style={styles.Time}>Tháng</Text>
+          </View>
+ 
+
+  const transactions = [
+    {
+      key: 1,
+      value: 50,
+      svg: { fill: 'red' },
+    },
+    {
+      key: 2,
+      value: 30,
+      svg: { fill: 'green' },
+    },
+    {
+      key: 3,
+      value: 20,
+      svg: { fill: 'blue' },
+    },
+  ];
+ 
+ <DayChart transactions={transactions} />
+ 
+ <Chart transactions={transactions} />
+ 
+   arc: { // Chú thích cho mỗi phần của biểu đồ
+          outerRadius: '80%', // Bán kính ngoài
+          padAngle: 0.02, // Góc trống giữa các phần
+          cornerRadius: 10, // Độ cong góc
+          // Để thêm chú thích thêm vào arc:
+          // startAngle: 0,
+          // endAngle: 360,
+        },
+ 
+ useEffect(() => {
+    console.log('Today\'s transactions:', transactions);
+  }, [transactions]);
+
+ 
+  console.log('data',response);
+ 
+console.log(response);
+ 
+   showMessage({
+        message: 'Đăng ký thành công',
+        type: 'success',
+      });
+ 
+console.log(response.transactions);
+ 
+ console.log(response.transactions)
+ 
+      console.log
+ 
+console.log('Signup successful:', response.message);
+ 
+ const response = await API.requestSignup(`/users/create?${token}`, signupData);
+
+ 
+ const signupData = {
+      username,
+      email,
+      password,
+      
+    };
+ 
+      <TouchableOpacity onPress={() => navigation.navigate('CustomHeader')}>
+        <Image
+          source={require('../Screens/add.png')}
+          style={styles.addIcon}
+        />
+      </TouchableOpacity>
+ 
+<TouchableOpacity onPress={() => navigation.navigate('CustomHeader')}>
+        <Image
+          source={require('../Screens/add.png')}
+          style={styles.addIcon}
+        />
+      </TouchableOpacity>
+ 
+  <CustomHeader />
+ 
+  <CustomHeader />
+ 
+ marginLeft:20
+ 
+  handleIncomeTabPress();
+ 
+  handleExpenseTabPress();
+ 
+currentDate
+ 
+flexDirection:'column'
+ 
+flexDirection:'column'
+ 
+ flexDirection: 'column',
+ 
+</View>
+ 
+<View style={styles.dayContainer}>
+ 
+// Cập nhật state category
+ 
+
+      /*
+      const updatedTransactionData = {
+        ...transactionData,
+        category: selectedCategory,
+      };
+      setTransactionData(updatedTransactionData);*/ // Cập nhật state transactionData
+ 
+ /*const updatedTransactionData = {
+        ...transactionData,
+        time: Moment().format('DD/MM/YYYY'), // Cập nhật thời gian theo format mong muốn (ngày/tháng/năm)
+        transaction_type: 'chi phí' // Đặt loại giao dịch
+      };
+      setTransactionData(updatedTransactionData);*/
+ 
+        //marginTop: 50, 
+ 
+    //alignItems: 'center',
+        //justifyContent: 'space-between', 
+ 
+ paddingVertical:13,
+ 
+  paddingHorizontal:15,
+ 
+ flex:1,
+ 
+
+  
+     
+  
+ 
+    
+  fontSize:20,
+    color:'#1E1E1E'
+ 
+fontWeight:'bold',
+      fontFamily: 'Arial',
+ 
+ //marginHorizontal: 10, 
+ 
+ \
+      marginLeft:10,
+ 
+     
+      borderColor: '#808080',
+ 
+ borderBottomWidth: 1,
+ 
+ flexDirection:'row',
+ 
+console.log(urlService)
+ 
+console.log(token)
+ 
+console.log(token)
+ 
+   console.log(error.status)
+ 
+ console.log(data)
+ 
+ console.log(apiInstance)
+ 
+//console.log(data)
+ 
+return data;
+ 
+    console.log(data)
+ 
+// Tự động điền category vào transactionData
+ 
+setCu
+ 
+style={styles.categoryIconWithText}
+ 
+<Image
+            source={require('../Screens/family.png')} 
+            style={styles.categoryIcon}
+        />
+ 
+   paddingHorizontal:20,
+      marginHorizontal:30
+ 
+ {/* Giao diện cho chi phí */}
+ 
+console.log(token)
+ 
+const getAuthToken = async () => {
+    const loginData = {
+      username: 'Admin',
+      password: '123456',
+    };
+  
+    try {
+      const authResponse = await API.requestPost_Role('/auth/login', loginData);
+      setToken(authResponse)
+      if (authResponse  && authResponse.userId) {
+        console.log('Login successful:', authResponse);
+        setRoleID(authResponse.userId);
+        console.log('RoleID:', authResponse.userId); 
+  
+  
+        
+      } else {
+        console.log('Login failed');
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+    }
+  };
+ 
+   //flex: 1,
+ 
+ flex: 1,
+ 
+marginRight:20,
+ 
+ 
+        alignItems: 'center',
+ 
+ justifyContent: 'space-around',
+ 
+flexDirection: 'row',
+ 
+const AddTransaction = () => {
+ 
+   const AddTransaction = () => {
+ 
+emailTex
+ 
+TextInput
+ 
+ value={email}
+ 
+ //onChangeText={(text) => setEmail(text)}
+ 
+  onChangeText={(text) => setEmail(text)}
+ 
+ marginTop: 40, 
+ 
+alignItems: 'center', 
+ 
+justifyContent: 'space-between', 
+ 
+<Text>Ăn uống</Text>
+ 
+    </View>
+ 
+   <View style={styles.categoryContainer}>
+ 
+categoryContainer:{
+        paddingTop:10,
+       
+      },
+ 
+paddingLeft:20,
+        paddingRight:20
+ 
+ flexDirection:'row'
+ 
+ marginTop:30,
+ 
+ marginLeft:-50 
+ 
+flex: 1,
+ 
+justifyContent:'center',
+ 
+textAlign:'center',
+ 
+paddingTop: 30
+ 
+ <Ionicons name={arrow-undo} size={25} />
+ 
+ style={styles.eyeIcon}
+ 
+style={styles.eyeIcon} 
+ 
+Feather
+ 
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+ 
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+ 
+<FontAwesome name={arrows} size={25}  />
+ 
+style={styles.eyeIcon}
+ 
+marginTop: 50, 
+ 
+ marginLeft: 30, 
+ 
+<View style={{ flex: 1 }}/>
+ 
+          <Text style={styles.SignupText}> Your Profile</Text>
+     <View style={{ flex: 1 }}/
+ 
+SignupText:{
+ 
+//marginBottom:10,
+ 
+<Text>VND</Text>
+ 
+const { height } = Dimensions.get('window');
+ 
+height: height/3,
+ 
+import Chart from './Chart'
+ 
+<MaterialCommunityIcons name={}
+ 
+ /*
+     
+        await AsyncStorage.setItem('userToken', response.token);
+        await AsyncStorage.setItem('userId', response.userId); 
+        await AsyncStorage.setItem('userEmail', userEmail);
+        
+        const userID=response.userId;
+        
+        const responsess=await API.requestPOST_Login('/auth/login', getTokenData)
+        const userToken=responsess.token;
+        const responses = await API.requestGET_USER_DETAILS(`/users/details?id=${userID}&token=${userToken}`);
+        
+        const { user } = responses;
+        const { username ,email} = user;
+    
+        await AsyncStorage.setItem('username', username);
+        await AsyncStorage.setItem('email', email);
+  
+        console.log(responses.username,'+',responses.email);
+  
+       
+        console.log('ID',userID);
+  
+        // async function getItem(item) {
+        //   try {
+        //     const value = await AsyncStorage.getItem(item);
+        //     console.log(value);
+        //     return value;
+        //   } catch (error) {
+        //     // Handle errors here
+        //   }
+        // }
+        // getItem('userToken');
+        if (response.userRoleId == '653a2551a823940702a4b910' || response.userRoleId == "653a2519a823940702a4b90a") {
+          navigation.navigate('BottomTabSeller', { username: response.username, userEmail: response.userEmail });
+         
+          
+        } else {
+          navigation.navigate('BottomTabBuyer', { username: response.username, userEmail: response.userEmail });
+        
+          setUserName('');
+          setPassword('');
+        }
+      } else {
+        // setMessage('Email hoặc mật khẩu sai. Vui lòng kiểm tra lại.');
+        showMessage({
+          message: "Lỗi",
+          description: "Email hoặc mật khẩu sai. Vui lòng kiểm tra lại.",
+          type: "danger",
+          position: 'top', 
+          duration: 5000,
+          icon: props => <AntDesign name='warning' size={22} color={COLORS.white} style={{padding: 10}}{...props} />,
+        });
+      }
+      */
+ 
+const getTokenData={
+        username: 'admin123',
+        password: '123456',
+      };
+ 
+// setMessage('Email hoặc mật khẩu sai. Vui lòng kiểm tra lại.');
+ 
+ if ( error.response.status === 400) {
+        console.log('Error 400: Resource not found',error.status);
+    } 
+ 
+headers: {
+        'Content-Type': 'application/json',
+      
+      }
+ 
+  if (error.response && error.response.status === 400) {
+        console.error('Error 400:', error.response.data.message);
+       
+      }
+ 
+ console.log('error',Request.error)
+ 
+ // In ra chi tiết lỗi khi status code là 400
+ 
+ console.log('error',response.error)
+ 
+if (response.error) {
+          console.error('Error:', response.error);
+        }
+ 
+console.log("Signup data",signupData)
+ 
+ </TextInput>
+ 
+// để phần tử TextInput và TouchableOpacity nằm hai bên
+ 
+<View style={styles.menuItem}></View>
+ 
+ marginTop:15,
+    marginHorizontal:30
+ 
+paddingVertical:13,
+    paddingHorizontal:35,
+ 
+borderColor:'#808080',
+    borderBottomWidth:1,
+ 
+import axios from 'axios';
+ 
+    const [location, setLocation] = useState('');
+    const [phoneNumber,setPhoneNumber]=useState('');
+ 
+ const [roleID, setRoleID] = useState(''); 
+ 
+avatar: {
+          public_id: 'string',
+          url: 'string',
+        },
+ 
+phone:phoneNumber,
+        roleID,
+ 
+firstName: 'DefaultFirstName', 
+        lastName: 'DefaultLastName',  
+ 
+   address: location,
+ 
+<Text style={styles.emailText}>Confirm Password</Text>
+             <TextInput style={styles.menuItem}>
+             </TextInput>
+ 
+import ProfileScreen from '../screens/profile/ProfileScreen';
+ 
+import Search from '../screens/Search';
+ 
+import Icon from 'react-native-ionicons'
+ 
+import Icon from 'react-native-ionicons'
+ 
+import Ionicons from 'react-native-vector-icons/Ionicons';
+ 
+import BottomTabNavigation from './Screens/BottomTabNavigation';
+ 
+
+  <Stack.Screen
+          name="BottomTab"
+          component={BottomTabNavigation}
+          options={{headerShown: false}}
+        />
+ 
+import ProfileScreen from '../screens/profile/ProfileScreen';
+ 
+import Search from '../screens/Search';
+ 
+<View style={{marginLeft:'10', paddingLeft:'10'}}>
+ 
+</View>
+ 
+//borderColor: '#808080',
+ 
+ //borderWidth: 0.5,
+ 
+inforDetail:{
+
+  }
+ 
+   />
+ 
+placeholder=""
+ 
+//borderColor:COLORS.primary
+ 
+  alignItems:'center'
+ 
+alignItems: 'center', 
+ 
+<Text style={styles.label}>Username</Text>
+ 
+ value={userName}
+                  onChangeText={text => setUserName(text)}
+ 
+<AntDesign
+                  name="user"
+                  size={20}
+                  color={COLORS.gray}
+                  style={styles.iconStyle}
+                />
+ 
+<Text> </Text>
+ 
+justifyContent:'center',
+    alignItems:'center'
+ 
+ <View>
+      {/* Một phần của giao diện người dùng để chuyển hướng đến màn hình chi phí */}
+      <Button
+        title="Chi phí"
+        onPress={() => navigation.navigate('Chi phí')}
+      />
+
+      {/* Một phần của giao diện người dùng để chuyển hướng đến màn hình thu nhập */}
+      <Button
+        title="Thu nhập"
+        onPress={() => navigation.navigate('Thu nhập')}
+      />
+
+      {/* Khai báo hai stack navigator */}
+      <CostStack.Navigator>
+        <CostStack.Screen name="Chi phí" component={CostScreen} />
+        {/* Các màn hình khác trong stack của chi phí */}
+      </CostStack.Navigator>
+
+      <IncomeStack.Navigator>
+        <IncomeStack.Screen name="Thu nhập" component={IncomeScreen} />
+        {/* Các màn hình khác trong stack của thu nhập */}
+      </IncomeStack.Navigator>
+    </View>
+
+ 
+{/* Chèn biểu đồ vào đây */}
+ 
+<Text>Here is your main component content</Text>
+ 
+tuần tháng năm
+ 
+"esModuleInterop"
+ 
+import Chart from '../Chart';
+ 
+flexDirection:'column'
+ 
+</View>
+   
+    </View>
+ 
+flexDirection:'row'
+ 
+flexDirection:'row'
+ 
+TotalBalance
+ 
+TopleftContainer
+ 
+// Căn chỉnh các phần tử bên trong theo chiều dọc
+ 
+// Sắp xếp các phần tử bên trong theo chiều ngang
+ 
+// Căn chỉnh các phần tử bên trong theo chiều dọc
+ 
+// Sắp xếp các phần tử bên trong theo chiều ngang
+ 
+// Khoảng cách từ top
+ 
+/ Khoảng cách lề trái và lề phải của phần tử container
+ 
+// Phân bố không gian dư thừa giữa các phần tử
+ 
+// Căn chỉnh các phần tử theo chiều dọc
+ 
+/ Sắp xếp các phần tử theo chiều ngang
+ 
+<View>< /View>
+ 
+Group91.png
+ 
+<Text>Hi</Text>
+ 
+onPress={handleLogin}
+ 
+<Text style={styles.SignupText}>Sign up</Text>
+ 
+ //paddingBottom:20
+ 
+<Text>Hi there</Text>
+ 
+resizeMode='cover'
+ 
+../../assets/images/space.jpg
+ 
+ <MaterialCommunityIcons
+        name="cicle"
+        size={20}
+        color='#ffff'
+        style={styles.iconStyle}
+      />
+ 
+{COLORS.gray}
+ 
+<Text>
+    Hi
+   </Text>
+ 
+type SectionProps = PropsWithChildren<{
+  title: string;
+}>;
+
+ 
+function Section({children, title}: SectionProps): React.JSX.Element {
+  const isDarkMode = useColorScheme() === 'dark';
+  return (
+    <View style={styles.sectionContainer}>
+      <Text
+        style={[
+          styles.sectionTitle,
+          {
+            color: isDarkMode ? Colors.white : Colors.black,
+          },
+        ]}>
+        {title}
+      </Text>
+      <Text
+        style={[
+          styles.sectionDescription,
+          {
+            color: isDarkMode ? Colors.light : Colors.dark,
+          },
+        ]}>
+        {children}
+      </Text>
+    </View>
+  );
+}
+ 
